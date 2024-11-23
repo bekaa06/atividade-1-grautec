@@ -1,21 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apresentação</title>
-</head>
-<body>
-    <header>
+{% extends "base.html"%}
+{% block conteudo %}
     <h1>Sobre Mim</h1>
     <p>gosto muito da área de hardware</p>
     <p>tenho 18, sou o rei dos games, true gamer, um verdadeiro jogador, nada de gracinhas, sou um hardcore gamer</p>
     <p>moro no interior do Píaui</p>
-    <img src="{{ url_for('static', filename='imagens/soudorock.jpg') }}"style="width: 300px; height: auto;">
-        
-    <nav>
-        <a href="{{ url_for('contact') }}">Clique aqui caso queira me mandar uma mensagem e tomar uma surra pro maior gamer do Brasil</a>
-    </nav>
-    </header>
-</body>
-</html>
+    <img src="../static/img/TRUE GAMER.jpg" style="width: 300px; height: auto;">
+{% endblock %}
+    

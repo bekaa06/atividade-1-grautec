@@ -3,9 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Apresentação</title>
 </head>
 <body>
-    
+    <header>        
+        <nav>
+            <a href="{{ url_for('contact') }}">Clique aqui caso queira me mandar uma mensagem e tomar uma surra pro maior gamer do Brasil</a>
+        </nav>
+    </header>
+    {% block conteudo %}
+    {% endblock %}
 </body>
 </html>
