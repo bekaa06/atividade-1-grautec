@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmação de Envio</title>
+</head>
+<body>
+    <header>
+        <h1>Mensagem Enviada com Sucesso!</h1>
+        <p>Obrigado por entrar em contato. Sua mensagem foi enviada com sucesso.</p>
+        <p><strong>Sua mensagem:</strong></p>
+        <p>{{ message }}</p>
+        <nav>
+            <a href="{{ url_for('home') }}">Voltar para a página inicial</a>
+        </nav>
+    </header>
+</body>
+</html>

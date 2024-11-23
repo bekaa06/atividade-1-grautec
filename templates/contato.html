@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <h1>Escreva algo bonitinho!</h1>
+        <form method="POST">
+            <label for="message">Sua mensagem:</label>
+            <textarea id="message" name="message" rows="4" cols="50" placeholder="Escreva sua mensagem aqui..."></textarea><br><br>
+            <button type="submit">Enviar</button>
+        </form>
+        <nav>
+            <a href="{{ url_for('home') }}">Voltar para a página inicial</a>
+        </nav>
+    </header>
+</body>
+</html>
